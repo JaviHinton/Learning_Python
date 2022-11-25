@@ -47,3 +47,24 @@ print(friends)
 # print(friends.sort()) < does not work, needs to be done separately
 friends.sort()
 print(friends)
+
+# Arrays!
+
+#   We can create a 2D list (array) by putting lists within lists
+#   These must be separated with , and will be referenced with [row][column]
+
+first_array = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+
+# Below should print out 5 as starting count from 0, the first column over and down points to 5
+print(first_array[1][1])
+
+# We can loop through all values by nesting
+for row in first_array:
+    for col in row:
+        print(col)
+
